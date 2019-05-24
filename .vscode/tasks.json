@@ -1,0 +1,81 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build dev",
+            "group": "build",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "ng build"
+                ]
+            }
+        },
+        {
+            "label": "build qa",
+            "group": "build",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "ng build --aot"
+                ]
+            }
+        },
+        {
+            "label": "build production",
+            "group": "build",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "ng build --prod"
+                ]
+            }
+        },
+        {
+            "label": "serve 4200 dev",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "ng serve --port 4200"
+                ]
+            }
+        },
+        {
+            "label": "serve 4200 qa",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "ng serve --port 4200 --aot"
+                ]
+            }
+        },
+        {
+            "label": "serve 4200 production",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "ng serve --port 4200 --prod"
+                ]
+            }
+        },
+        {
+            "label": "extract translations",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "npm run extract"
+                ]
+            }
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

@@ -2,10 +2,10 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 // boostrap
-@import '~bootstrap/scss/boostrap';
+@import '~bootstrap/scss/bootstrap-grid';
 
 // custom styles
-@import './assets/styles/global';
+@import './styles/global';
 
 // custom themes
-@import './assets/styles/themes/cartoon-theme/theme';
+@import './styles/themes/cartoon-theme/theme';
