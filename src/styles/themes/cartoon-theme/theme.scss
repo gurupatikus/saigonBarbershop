@@ -1,2 +1,24 @@
 @import 'buttons';
 @import 'utils';
+
+
+.main-menu {
+    background-color: #ececec;
+    width: 100%;
+    min-height: 50px;
+    padding: 5px 20px;
+
+    .main-menu-logo {
+        font-size: 18px;
+        color: #333;
+        height: 100%;
+    }
+
+    .main-menu-links {
+        height: 100%;
+
+        .main-menu-link {
+            margin: 1px;
+        }
+    }
+}

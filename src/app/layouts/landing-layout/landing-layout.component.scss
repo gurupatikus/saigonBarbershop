@@ -1,0 +1,24 @@
+.header {
+    background-image: url('https://thesketch.me/phpthumbsup/w/1920/amp%3bh/1080/amp%3bzc/1/amp%3bq/50/src/assets/new/img/head_bg2.jpg');
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    .header-website-name {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+
+        h2 {
+            color: white;
+            margin: 0;
+            font-size: 32px;
+        }
+    }
+}
+
+.page-content {
+    min-height: 400px;
+    width: 100%;
+}

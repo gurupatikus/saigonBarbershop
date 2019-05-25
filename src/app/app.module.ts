@@ -9,11 +9,19 @@ import {
 
 import { AppComponent } from './root/app.component';
 import { LandingLayoutComponent } from './layouts/landing-layout/landing-layout.component';
+import { ButtonComponent } from './components/button/button.component';
+import { LinkComponent } from './components/link/link.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingLayoutComponent
+    LandingLayoutComponent,
+    ButtonComponent,
+    LinkComponent,
+    LandingPageComponent,
+    ContactPageComponent
   ],
   imports: [
     // angular material

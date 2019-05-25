@@ -40,7 +40,10 @@
                 "args": [
                     "ng serve --port 4200"
                 ]
-            }
+            },
+            "problemMatcher": [
+                "$tsc"
+            ]
         },
         {
             "label": "serve 4200 qa",

@@ -1,1 +1,178 @@
 @import 'mixins';
+
+button,
+a {
+    &.btn {
+        border-radius: 21px;
+        border: 1px solid;
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        padding: 8px 40px;
+        text-decoration: none;
+        display: inline-block;
+        white-space: nowrap;
+
+        &>* {
+            vertical-align: middle;
+        }
+
+        &:hover:not([disabled]) {
+            cursor: pointer;
+        }
+
+        &:focus:not([disabled]) {
+            outline: none;
+        }
+
+        .mat-button-focus-overlay,
+        .mat-button-ripple {
+            display: none;
+        }
+
+        &.btn-primary {
+            background: $theme-primary-color;
+            border-color: $theme-primary-color;
+            color: $white;
+            outline: none !important;
+
+            &:hover:not([disabled]) {
+                background: $theme-primary-color - 15%; 
+                border-color: $theme-primary-color - 15%; 
+            }
+
+            &:active:not([disabled]) {
+                background: $theme-primary-color - 30%; 
+                border-color: $theme-primary-color - 30%; 
+            }
+
+            &.btn--bordered,
+            &.btn-link {
+                color: $theme-primary-color;
+            }
+        }
+
+        &.btn-secondary {
+            background: $theme-secondary-color;
+            border-color: $theme-secondary-color;
+            color: $white;
+
+            &:hover:not([disabled]) {
+                background: $theme-secondary-color - 15%; 
+                border-color: $theme-secondary-color - 15%; 
+            }
+
+            &:active:not([disabled]) {
+                background: $theme-secondary-color - 30%; 
+                border-color: $theme-secondary-color - 30%; 
+            }
+
+            &.btn--bordered,
+            &.btn-link {
+                color: $theme-secondary-color;
+            }
+        }
+
+        &.btn-default {
+            background: transparent;
+            border-color: $white;
+            color: $white;
+
+            &:hover:not([disabled]) {
+                background: $white;
+                color: #000 !important;
+            }
+        }
+
+        &.btn-muted {
+            color: $beau-blue;
+            border-color: $beau-blue;
+
+            &.btn--bordered:hover:not([disabled]) {
+                background-color: $beau-blue;
+            }
+        }
+
+        &.btn-control {
+            padding: 0 10px;
+            border: none;
+
+            &:hover:not([disabled]) {
+                .btn--text {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &.btn--small {
+            font-size: 15px;
+            padding: 4px 20px;
+        }
+
+        &.btn--large {
+            font-size: 17px;
+            padding: 12px 60px;
+        }
+
+        &.btn--extra-large {
+            font-size: 32px;
+            padding: 16px 40px;
+        }
+
+        &.btn--rounded {
+            border-radius: 50px;
+        }
+
+        &.btn--square {
+            border-radius: 1px;
+        }
+
+        &.btn--bordered {
+            background: transparent;
+
+            &:hover:not([disabled]) {
+                color: $white;
+            }
+        }
+
+        &.btn--border-separated {
+            border-right: 1px solid $gray;
+            border-left: 1px solid $gray;
+        }
+
+        &.btn-facebook {
+            color: #0079c4;
+            border-color: #0079c4;
+
+            &:hover:not([disabled]) {
+                background: #0079c4;
+                color: $white;
+            }
+        }
+
+        .mat-button-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                margin-left: 5px;
+            }
+        }
+
+        &.btn-link {
+            border: none;
+            background: none;
+
+            &:hover:not([disabled]) {
+                background: none;
+
+                .btn--text {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

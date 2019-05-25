@@ -1,8 +1,21 @@
-<div>
-  <h1>Header</h1>
+<div class="header">
+  <div class="header-website-name">
+    <h2>Старый Сайгон</h2>
+  </div>
 </div>
-<router-outlet></router-outlet>
-
-<div>
-  <h1>Footer</h1>
+<div class="main-menu">
+  <div class="row">
+    <div class="main-menu-logo col-12 col-sm-3 d-flex justify-content-start align-items-center"><span>Logo</span></div>
+    <div class="main-menu-links col-12 col-sm-6  d-flex justify-content-center align-items-center">
+      <app-link class="main-menu-link btn-secondary btn--square" [routerLink]="'/'">Главная</app-link>
+      <app-link class="main-menu-link btn-secondary btn--square" [routerLink]="'/contacts'">Контакты</app-link>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
+<div class="page-content">
+  <router-outlet></router-outlet>
+</div>
+<div class="d-flex justify-content-center align-items-center">
+  <h4>Старый Сайгон &copy; 2019 </h4>
 </div>

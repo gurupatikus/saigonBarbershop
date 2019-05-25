@@ -1,0 +1,32 @@
+.video {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #eafaff;
+}
+
+.card-container {
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #ccc;
+
+    .card-number {
+        background-color: #555;
+        color: white;
+        border-radius: 50%;
+        width: 30px;
+        line-height: 30px;
+    }
+}
+
+.ready {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #fff0dc;
+}
